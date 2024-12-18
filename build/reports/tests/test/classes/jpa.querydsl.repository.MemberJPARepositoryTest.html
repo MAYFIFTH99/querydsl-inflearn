@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MemberJPARepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MemberJPARepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/jpa.querydsl.repository.html">jpa.querydsl.repository</a> &gt; MemberJPARepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.760s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">findAll()</td>
+<td class="success">findAll()</td>
+<td class="success">0.742s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findById</td>
+<td class="success">findById()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">save</td>
+<td class="success">save()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:12:16.127 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jpa.querydsl.repository.MemberJPARepositoryTest]: MemberJPARepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:12:16.228 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jpa.querydsl.QueryDslApplication for test class jpa.querydsl.repository.MemberJPARepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2024-12-18T16:12:16.587+09:00  INFO 24304 --- [    Test worker] j.q.repository.MemberJPARepositoryTest   : Starting MemberJPARepositoryTest using Java 21.0.3 with PID 24304 (started by MINSEOK in C:\Users\Administrator\Desktop\Inflearn\QueryDSL\QueryDSL)
+2024-12-18T16:12:16.588+09:00  INFO 24304 --- [    Test worker] j.q.repository.MemberJPARepositoryTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-12-18T16:12:17.147+09:00  INFO 24304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T16:12:17.168+09:00  INFO 24304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2024-12-18T16:12:17.667+09:00  INFO 24304 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T16:12:17.722+09:00  INFO 24304 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T16:12:17.760+09:00  INFO 24304 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T16:12:18.006+09:00  INFO 24304 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T16:12:18.028+09:00  INFO 24304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T16:12:18.100+09:00  INFO 24304 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/querydsl user=SA
+2024-12-18T16:12:18.102+09:00  INFO 24304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T16:12:18.159+09:00  INFO 24304 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -&gt; dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 2.2.224
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T16:12:18.697+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create global temporary table HTE_team(rn_ integer not null, team_id bigint, name varchar(255), primary key (rn_)) TRANSACTIONAL
+2024-12-18T16:12:18.700+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938700 | took 1ms | statement | connection 1| url jdbc:h2:tcp://localhost/~/querydsl
+create global temporary table HTE_team(rn_ integer not null, team_id bigint, name varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_team(rn_ integer not null, team_id bigint, name varchar(255), primary key (rn_)) TRANSACTIONAL;
+2024-12-18T16:12:18.701+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create global temporary table HTE_member(age integer, rn_ integer not null, member_id bigint, team_id bigint, username varchar(255), primary key (rn_)) TRANSACTIONAL
+2024-12-18T16:12:18.702+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938702 | took 0ms | statement | connection 2| url jdbc:h2:tcp://localhost/~/querydsl
+create global temporary table HTE_member(age integer, rn_ integer not null, member_id bigint, team_id bigint, username varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_member(age integer, rn_ integer not null, member_id bigint, team_id bigint, username varchar(255), primary key (rn_)) TRANSACTIONAL;
+2024-12-18T16:12:18.702+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create global temporary table HTE_hello(rn_ integer not null, id bigint, message varchar(255), primary key (rn_)) TRANSACTIONAL
+2024-12-18T16:12:18.703+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938703 | took 0ms | statement | connection 3| url jdbc:h2:tcp://localhost/~/querydsl
+create global temporary table HTE_hello(rn_ integer not null, id bigint, message varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_hello(rn_ integer not null, id bigint, message varchar(255), primary key (rn_)) TRANSACTIONAL;
+2024-12-18T16:12:18.806+09:00  INFO 24304 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T16:12:18.819+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists hello cascade 
+2024-12-18T16:12:18.822+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938822 | took 2ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+
+    drop table if exists hello cascade 
+
+    drop table if exists hello cascade ;
+2024-12-18T16:12:18.822+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists member cascade 
+2024-12-18T16:12:18.823+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938823 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+
+    drop table if exists member cascade 
+
+    drop table if exists member cascade ;
+2024-12-18T16:12:18.824+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists team cascade 
+2024-12-18T16:12:18.824+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938824 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+
+    drop table if exists team cascade 
+
+    drop table if exists team cascade ;
+2024-12-18T16:12:18.825+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists hello_seq
+2024-12-18T16:12:18.826+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938826 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+
+    drop sequence if exists hello_seq
+
+    drop sequence if exists hello_seq;
+2024-12-18T16:12:18.826+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists member_seq
+2024-12-18T16:12:18.827+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938827 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+
+    drop sequence if exists member_seq
+
+    drop sequence if exists member_seq;
+2024-12-18T16:12:18.827+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists team_seq
+2024-12-18T16:12:18.828+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938828 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+
+    drop sequence if exists team_seq
+
+    drop sequence if exists team_seq;
+2024-12-18T16:12:18.832+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence hello_seq start with 1 increment by 50
+2024-12-18T16:12:18.834+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938834 | took 1ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+    create sequence hello_seq start with 1 increment by 50
+
+    create sequence hello_seq start with 1 increment by 50;
+2024-12-18T16:12:18.834+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence member_seq start with 1 increment by 50
+2024-12-18T16:12:18.835+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938835 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+    create sequence member_seq start with 1 increment by 50
+
+    create sequence member_seq start with 1 increment by 50;
+2024-12-18T16:12:18.835+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence team_seq start with 1 increment by 50
+2024-12-18T16:12:18.836+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938836 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+    create sequence team_seq start with 1 increment by 50
+
+    create sequence team_seq start with 1 increment by 50;
+2024-12-18T16:12:18.839+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create table hello (
+        id bigint not null,
+        message varchar(255),
+        primary key (id)
+    )
+2024-12-18T16:12:18.840+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938840 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+    create table hello (
+        id bigint not null,
+        message varchar(255),
+        primary key (id)
+    )
+
+    create table hello (
+        id bigint not null,
+        message varchar(255),
+        primary key (id)
+    );
+2024-12-18T16:12:18.841+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create table member (
+        age integer not null,
+        member_id bigint not null,
+        team_id bigint,
+        username varchar(255),
+        primary key (member_id)
+    )
+2024-12-18T16:12:18.842+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938842 | took 1ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+    create table member (
+        age integer not null,
+        member_id bigint not null,
+        team_id bigint,
+        username varchar(255),
+        primary key (member_id)
+    )
+
+    create table member (
+        age integer not null,
+        member_id bigint not null,
+        team_id bigint,
+        username varchar(255),
+        primary key (member_id)
+    );
+2024-12-18T16:12:18.843+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    create table team (
+        team_id bigint not null,
+        name varchar(255),
+        primary key (team_id)
+    )
+2024-12-18T16:12:18.844+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938844 | took 1ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+    create table team (
+        team_id bigint not null,
+        name varchar(255),
+        primary key (team_id)
+    )
+
+    create table team (
+        team_id bigint not null,
+        name varchar(255),
+        primary key (team_id)
+    );
+2024-12-18T16:12:18.845+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists member 
+       add constraint FKcjte2jn9pvo9ud2hyfgwcja0k 
+       foreign key (team_id) 
+       references team
+2024-12-18T16:12:18.849+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505938849 | took 3ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+    alter table if exists member 
+       add constraint FKcjte2jn9pvo9ud2hyfgwcja0k 
+       foreign key (team_id) 
+       references team
+
+    alter table if exists member 
+       add constraint FKcjte2jn9pvo9ud2hyfgwcja0k 
+       foreign key (team_id) 
+       references team;
+2024-12-18T16:12:18.852+09:00  INFO 24304 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T16:12:19.038+09:00  WARN 24304 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-18T16:12:19.489+09:00  INFO 24304 --- [    Test worker] j.q.repository.MemberJPARepositoryTest   : Started MemberJPARepositoryTest in 3.147 seconds (process running for 4.094)
+2024-12-18T16:12:19.853+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for member_seq
+2024-12-18T16:12:19.864+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505939864 | took 5ms | statement | connection 6| url jdbc:h2:tcp://localhost/~/querydsl
+select next value for member_seq
+select next value for member_seq;
+2024-12-18T16:12:19.877+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for member_seq
+2024-12-18T16:12:19.878+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505939878 | took 0ms | statement | connection 6| url jdbc:h2:tcp://localhost/~/querydsl
+select next value for member_seq
+select next value for member_seq;
+2024-12-18T16:12:20.170+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+2024-12-18T16:12:20.173+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505940173 | took 0ms | statement | connection 6| url jdbc:h2:tcp://localhost/~/querydsl
+insert into member (age,team_id,username,member_id) values (?,?,?,?)
+insert into member (age,team_id,username,member_id) values (0,NULL,NULL,1);
+2024-12-18T16:12:20.174+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+2024-12-18T16:12:20.175+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505940175 | took 0ms | statement | connection 6| url jdbc:h2:tcp://localhost/~/querydsl
+insert into member (age,team_id,username,member_id) values (?,?,?,?)
+insert into member (age,team_id,username,member_id) values (0,NULL,NULL,2);
+2024-12-18T16:12:20.176+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+2024-12-18T16:12:20.176+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505940176 | took 0ms | statement | connection 6| url jdbc:h2:tcp://localhost/~/querydsl
+insert into member (age,team_id,username,member_id) values (?,?,?,?)
+insert into member (age,team_id,username,member_id) values (0,NULL,NULL,3);
+2024-12-18T16:12:20.184+09:00 DEBUG 24304 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        m1_0.member_id,
+        m1_0.age,
+        m1_0.team_id,
+        m1_0.username 
+    from
+        member m1_0
+2024-12-18T16:12:20.186+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505940186 | took 0ms | statement | connection 6| url jdbc:h2:tcp://localhost/~/querydsl
+select m1_0.member_id,m1_0.age,m1_0.team_id,m1_0.username from member m1_0
+select m1_0.member_id,m1_0.age,m1_0.team_id,m1_0.username from member m1_0;
+2024-12-18T16:12:20.240+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505940240 | took 0ms | rollback | connection 6| url jdbc:h2:tcp://localhost/~/querydsl
+
+;
+2024-12-18T16:12:20.263+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505940263 | took 0ms | rollback | connection 7| url jdbc:h2:tcp://localhost/~/querydsl
+
+;
+2024-12-18T16:12:20.270+09:00  INFO 24304 --- [    Test worker] p6spy                                    : #1734505940270 | took 0ms | rollback | connection 8| url jdbc:h2:tcp://localhost/~/querydsl
+
+;
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.10\e8eb255b2c378b9a6c7341e7b0e12f0a5636377\byte-buddy-agent-1.15.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at Dec 18, 2024, 4:12:20 PM</p>
+</div>
+</div>
+</body>
+</html>
