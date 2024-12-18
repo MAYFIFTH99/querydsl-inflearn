@@ -70,4 +70,35 @@ class MemberJPARepositoryTest {
         assertThat(memberList).hasSize(3);
     }
 
+    @Test
+    void findByUsernameQuerydsl() throws Exception {
+        //given
+        Member member = new Member("hello");
+        memberJPARepository.save(member);
+        //when
+        List<Member> findMember = memberJPARepository.findByUsername_Querydsl("hello");
+        //then
+        assertThat(findMember).hasSize(1);
+        assertThat(findMember.get(0)).isEqualTo(member);
+    }
+
+    @Test
+    void findAllQuerydsl() throws Exception {
+        //given
+        List<Member> members = new ArrayList<>();
+        Member member1 = new Member();
+        Member member2 = new Member();
+        Member member3 = new Member();
+
+        members.add(member1);
+        members.add(member2);
+        members.add(member3);
+        memberJPARepository.save(member1);
+        memberJPARepository.save(member2);
+        memberJPARepository.save(member3);
+        //when
+        List<Member> memberList = memberJPARepository.findAll_Querydsl();
+        //then
+        assertThat(memberList).hasSize(3);
+    }
 }
