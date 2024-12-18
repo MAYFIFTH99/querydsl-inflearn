@@ -3,10 +3,13 @@ package jpa.querydsl.repository;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
 import jpa.querydsl.entity.Member;
+import jpa.querydsl.entity.QMember;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
+import static jpa.querydsl.entity.QMember.*;
 
 @Repository
 public class MemberJPARepository {
@@ -31,12 +34,27 @@ public class MemberJPARepository {
         return em.createQuery("select m from Member m", Member.class).getResultList();
     }
 
+    public List<Member> findAll_Querydsl() {
+        return queryFactory
+                .select(member)
+                .from(member)
+                .fetch();
+    }
+
     public Optional<List<Member>> findByUsername(String username) {
         return Optional.ofNullable(
                 em.createQuery("select m from Member m where m.username =:username", Member.class)
                         .setParameter("username", username)
                         .getResultList()
         );
+    }
+
+    public List<Member> findByUsername_Querydsl(String username) {
+        return queryFactory
+                .select(member)
+                .from(member)
+                .where(member.username.eq(username))
+                .fetch();
     }
 
 
